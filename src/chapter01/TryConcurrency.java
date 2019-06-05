@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 public class TryConcurrency {
 
 	public static void main(String[] args){
-		// 通过匿名内部类的方式创建线程，并且重写其中的run方法
+		// 閫氳繃鍖垮悕鍐呴儴绫荤殑鏂瑰紡鍒涘缓绾跨▼锛屽苟涓旈噸鍐欏叾涓殑run鏂规硶
 		new Thread() {
 			public void run() {
 				enjoyMusic();

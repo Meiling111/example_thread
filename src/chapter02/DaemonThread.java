@@ -3,7 +3,7 @@ package chapter02;
 public class DaemonThread {
 
 	public static void main(String[] args) throws InterruptedException {
-		// 1.main Ïß³Ì¿ªÊ¼
+		// 1.main çº¿ç¨‹å¼€å§‹
 		Thread thread = new Thread(() -> {
 			while(true) {
 				try {
@@ -13,11 +13,11 @@ public class DaemonThread {
 				}
 			}
 		});
-		 thread.setDaemon(true); // 2.½«threadÉèÖÃÎªÊØ»¤Ïß³Ì
+		 thread.setDaemon(true); // 2.å°†threadè®¾ç½®ä¸ºå®ˆæŠ¤çº¿ç¨‹
 		
-		thread.start(); // 3.Æô¶¯threadÏß³Ì
+		thread.start(); // 3.å¯åŠ¨threadçº¿ç¨‹
 		Thread.sleep(2_000L);
 		System.out.println("Main thread finished lifecycle.");
-		// 4.mainÏß³Ì½áÊø
+		// 4.mainçº¿ç¨‹ç»“æŸ
 	}
 }

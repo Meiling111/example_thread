@@ -2,10 +2,10 @@ package chapter01;
 
 public class TicketWindow extends Thread {
 
-	// ¹ñÌ¨Ãû³Æ
+	// æŸœå°åç§°
 	private final String name;
 	
-	// ×î¶àÊÜÀí50±ÊÒµÎñ
+	// æœ€å¤šå—ç†50ç¬”ä¸šåŠ¡
 	private static final int MAX = 50;
 	
 	private static int index = 1;
@@ -16,21 +16,21 @@ public class TicketWindow extends Thread {
 	
 	public void run() {
 		while(index <= MAX) {
-			System.out.println("¹ñÌ¨£º"+ name +"£¬µ±Ç°µÄºÅÂëÊÇ£º"+ (index++));
+			System.out.println("æŸœå°ï¼š"+ name +"ï¼Œå½“å‰çš„å·ç æ˜¯ï¼š"+ (index++));
 		}
 	}
 	
 	public static void main(String[] args) {
-		TicketWindow ticketwindow1 = new TicketWindow("1ºÅ»ú");
+		TicketWindow ticketwindow1 = new TicketWindow("1å·æœº");
 		ticketwindow1.start();
 		
-		TicketWindow ticketWindow2 = new TicketWindow("2ºÅ»ú");
+		TicketWindow ticketWindow2 = new TicketWindow("2å·æœº");
 		ticketWindow2.start();
 		
-		TicketWindow ticketwindow3 = new TicketWindow("3ºÅ»ú");
+		TicketWindow ticketwindow3 = new TicketWindow("3å·æœº");
 		ticketwindow3.start();
 		
-		TicketWindow ticketWindow4 = new TicketWindow("4ºÅ»ú");
+		TicketWindow ticketWindow4 = new TicketWindow("4å·æœº");
 		ticketWindow4.start();
 	}
 }

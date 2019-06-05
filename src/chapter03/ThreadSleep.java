@@ -10,8 +10,8 @@ public class ThreadSleep {
 			long startTime = System.currentTimeMillis();
 //			sleep(2_000L);
 			try { 
-				// Ïß³ÌĞİÃß2·ÖÖÓ
-				TimeUnit.MINUTES.sleep(2); // Ê¹ÓÃTimeUnitÌæ´úTread.sleep,¿ÉÒÔ²»ÓÃ½«ĞİÃßÊ±¼ä»»Ëã³ÉºÁÃëÊı
+				// çº¿ç¨‹ä¼‘çœ 2åˆ†é’Ÿ
+				TimeUnit.MINUTES.sleep(2); // ä½¿ç”¨TimeUnitæ›¿ä»£Tread.sleep,å¯ä»¥ä¸ç”¨å°†ä¼‘çœ æ—¶é—´æ¢ç®—æˆæ¯«ç§’æ•°
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

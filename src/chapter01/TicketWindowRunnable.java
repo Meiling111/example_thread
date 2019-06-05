@@ -11,7 +11,7 @@ public class TicketWindowRunnable implements Runnable {
 	@Override
 	public void run() {
 		while(index <= MAX) {
-			System.out.println(Thread.currentThread() + "µÄºÅÂëÊÇ£º"+ (index++));
+			System.out.println(Thread.currentThread() + "çš„å·ç æ˜¯ï¼š"+ (index++));
 			try {
 				Thread.sleep(100);
 			} catch (Exception e) {
@@ -23,13 +23,13 @@ public class TicketWindowRunnable implements Runnable {
 //	public static void main(String[] args) {
 //		final TicketWindowRunnable task = new TicketWindowRunnable();
 //		
-//		Thread windowThread1 = new Thread(task,"1ºÅ´°¿Ú");
+//		Thread windowThread1 = new Thread(task,"1å·çª—å£");
 //		
-//		Thread windowThread2 = new Thread(task,"2ºÅ´°¿Ú");
+//		Thread windowThread2 = new Thread(task,"2å·çª—å£");
 //		
-//		Thread windowThread3 = new Thread(task,"3ºÅ´°¿Ú");
+//		Thread windowThread3 = new Thread(task,"3å·çª—å£");
 //		
-//		Thread windowThread4 = new Thread(task,"4ºÅ´°¿Ú");
+//		Thread windowThread4 = new Thread(task,"4å·çª—å£");
 //		
 //		windowThread1.start();
 //		windowThread2.start();
