@@ -8,6 +8,6 @@ import java.util.List;
  * @author gaomeiling
  *
  */
-public interface FightQuery {
+public interface FlightQuery {
 	List<String> get();
 }
