@@ -2,6 +2,10 @@ package chapter05;
 
 import java.util.LinkedList;
 
+/**
+ * 测试单线程间的通讯
+ * @author gaomeiling
+ */
 public class EventQueue {
 
 	private final int max;
@@ -26,7 +30,7 @@ public class EventQueue {
 		synchronized (eventQueue) {
 			if(eventQueue.size() >= max) {
 				try {
-					console("the queue is full.");
+					console("the queue is full."); // 队列满
 					eventQueue.wait();
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -42,7 +46,7 @@ public class EventQueue {
 		synchronized (eventQueue) {
 			if(eventQueue.isEmpty()) {
 				try {
-					console("the queue is empty.");
+					console("the queue is empty."); // 队列空
 					eventQueue.wait();
 				} catch (Exception e) {
 					e.printStackTrace();
